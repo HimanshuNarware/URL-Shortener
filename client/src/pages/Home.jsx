@@ -20,7 +20,7 @@ function Home() {
   let DefaultUrl=process.env.REACT_APP_BACKEND_URL| 'https://server-app-rosy.vercel.app/';
 async function fetchApi(){
   console.log("set value",url)
-    try{const response= await axios.post(`${DefaultUrl}/api/url`,{url,name})
+    try{const response= await axios.post(`${DefaultUrl}api/url`,{url,name})
 
     // console.log(response.data.message.nnid)
 
